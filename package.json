@@ -1,17 +1,29 @@
 {
-  "name": "natour-api",
-  "version": "1.0.0",
-  "description": "natour api with express",
-  "main": "index.js",
-  "scripts": {
-    "start:dev": "nodemon server.js"
-  },
-  "author": "kyawlinnthant",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.0.2"
-  }
+    "name": "natour-api",
+    "version": "1.0.0",
+    "description": "natour api with express",
+    "main": "index.js",
+    "scripts": {
+        "start:dev": "nodemon server.js",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "author": "kyawlinnthant",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "mongodb": "^6.3.0",
+        "mongoose": "^8.0.3",
+        "morgan": "^1.10.0",
+        "nodemon": "^3.0.2",
+        "validator": "^13.11.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "^3.1.1"
+    }
 }

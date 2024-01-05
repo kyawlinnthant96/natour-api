@@ -1,35 +1,37 @@
-const fs = require('fs');
-const users = JSON.parse(fs.readFileSync(`${__dirname}/../dev-data/data/users.json`))
+const fs = require('fs')
+const users = JSON.parse(
+    fs.readFileSync(`${__dirname}/../dev-data/data/users.json`)
+)
 
-exports.getAllUsers = (req,res) => {
+exports.getAllUsers = (req, res) => {
     res.status(200).json({
-        status: "success",
+        status: 'success',
         data: {
-            users
-        }
+            users,
+        },
     })
 }
-exports.getUser = (req,res) => {
+exports.getUser = (req, res) => {
     res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
-  });
+        status: 'error',
+        message: 'This route is not yet defined!',
+    })
 }
-exports.createUser = (req,res) => {
+exports.createUser = (req, res) => {
     res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
-  });
+        status: 'error',
+        message: 'This route is not yet defined!',
+    })
 }
-exports.updateUser = (req,res) => {
+exports.updateUser = (req, res) => {
     res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
-  });
+        status: 'error',
+        message: 'This route is not yet defined!',
+    })
 }
-exports.deleteUser = (req,res) => {
+exports.deleteUser = (req, res) => {
     res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
-  });
+        status: 'error',
+        message: 'This route is not yet defined!',
+    })
 }
