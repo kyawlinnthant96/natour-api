@@ -4,11 +4,12 @@
     "description": "natour api with express",
     "main": "index.js",
     "scripts": {
-        "start:dev": "nodemon server.js",
+        "start": "nodemon server.js",
         "format:check": "prettier --check .",
         "format:write": "prettier --write .",
         "lint:check": "eslint .",
-        "lint:fix": "eslint --fix ."
+        "lint:fix": "eslint --fix .",
+        "debug": "ndb server.js"
     },
     "author": "kyawlinnthant",
     "license": "ISC",
