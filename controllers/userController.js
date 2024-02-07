@@ -1,16 +1,17 @@
 const fs = require('fs')
-const users = JSON.parse(
-    fs.readFileSync(`${__dirname}/../dev-data/data/users.json`)
-)
+const catchAsync = require('../utils/catchAsync')
+const User = require('../models/userModels')
 
-exports.getAllUsers = (req, res) => {
+exports.getAllUsers = catchAsync(async (req, res, next) => {
+    const users = await User.find()
     res.status(200).json({
         status: 'success',
+        results: users.length,
         data: {
             users,
         },
     })
-}
+})
 exports.getUser = (req, res) => {
     res.status(500).json({
         status: 'error',
