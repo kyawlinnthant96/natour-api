@@ -33,3 +33,7 @@ D
 utils/apiFeatures.js,6\8\68b503e6b2c18cbbe9828486807ba3376b936bc2
 M
 controllers/userController.js,e\c\ec44b050defa6855748d2a8d6ff06d33bc8bba3a
+>
+utils/email.js,4\9\49c555094be8175ee0055579f2bb5f3cacbba255
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
