@@ -14,6 +14,16 @@ router.patch(
     authController.protect,
     authController.updatePassword
 )
+router.patch(
+    '/update-profile',
+    authController.protect,
+    userController.updateProfile
+)
+router.delete(
+    '/delete-profile',
+    authController.protect,
+    userController.deleteProfile
+)
 
 router
     .route('/')
